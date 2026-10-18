@@ -21,7 +21,7 @@ title: プライバシーポリシー / Privacy Policy
 通信先のサイトには、利用者の IP アドレスなど、通常のアクセスで送られる情報が届く場合があります。各サイトの取り扱いは、それぞれのプライバシーポリシーに従います。
 
 ### バックアップ
-利用者が「バックアップ先」を設定した場合に限り、保存した作品のデータ（CSV ファイル）を、利用者が選んだフォルダ（iCloud Drive、Google ドライブなど）に書き出します。書き出したファイルは、そのサービスの規約とプライバシーポリシーの下で管理されます。開発者はこのファイルにアクセスできません。
+利用者が「バックアップ先」を設定した場合に限り、保存した作品のデータ（CSV ファイル）を、利用者が選んだフォルダ（「ファイル」アプリで選べる場所）に書き出します。書き出したファイルは、そのサービスの規約とプライバシーポリシーの下で管理されます。開発者はこのファイルにアクセスできません。
 
 ### 生体認証
 「隠しモード」で Face ID / Touch ID / パスコードによる本人確認を使います。認証は iOS が行い、本アプリは生体情報を取得・保存しません。
@@ -60,7 +60,7 @@ The App contacts only the sites that correspond to URLs you saved. These are not
 Those sites may receive ordinary request information such as your IP address. Their handling is governed by their own privacy policies.
 
 ### Backup
-Only if you choose a backup folder, the App writes your saved items as a CSV file to that folder (for example iCloud Drive or Google Drive). The file is then governed by that service's terms and privacy policy. The developer cannot access it.
+Only if you choose a backup folder, the App writes your saved items as a CSV file to that folder (any location available in the Files app). The file is then governed by that service's terms and privacy policy. The developer cannot access it.
 
 ### Biometrics
 "Hidden mode" uses Face ID / Touch ID / passcode through iOS. The App does not obtain or store biometric data.
