@@ -2,7 +2,7 @@
 title: プライバシーポリシー / Privacy Policy
 ---
 
-最終更新日: 2026-10-17 / Last updated: 2026-10-17
+最終更新日: 2026-10-18 / Last updated: 2026-10-18
 
 ## 日本語
 
@@ -15,13 +15,13 @@ title: プライバシーポリシー / Privacy Policy
 ### 外部との通信
 本アプリは、次の場合にだけ、利用者が保存した URL などに対して通信します。通信先は利用者が指定したサイトであり、開発者のサーバーではありません。
 - 一覧や詳細に表示するため、保存されたサムネイル画像の URL から画像を取得します。
-- 共有シートから保存するとき、共有されたページの URL からタイトルや画像などの情報を取得します。YouTube と X（旧 Twitter）は、各社が公開している情報取得用の仕組み（oEmbed）を使います。
+- 共有シートから保存するとき、共有されたページの URL からタイトルや画像などの情報を取得します。YouTube と X（旧 Twitter）は、各社が公開している情報取得用の仕組み（oEmbed や、投稿の埋め込み表示に使われる API）を使います。
 - 「ページを開く」で、保存した URL を端末の標準ブラウザで開きます。
 
 通信先のサイトには、利用者の IP アドレスなど、通常のアクセスで送られる情報が届く場合があります。各サイトの取り扱いは、それぞれのプライバシーポリシーに従います。
 
 ### バックアップ
-利用者が「バックアップ先」を設定した場合に限り、保存した作品のデータ（CSV ファイル）を、利用者が選んだフォルダ（「ファイル」アプリで選べる場所）に書き出します。書き出したファイルは、そのサービスの規約とプライバシーポリシーの下で管理されます。開発者はこのファイルにアクセスできません。
+利用者が「書き出し先」を設定した場合に限り、保存した作品のデータ（CSV ファイル）を、利用者が選んだフォルダ（「ファイル」アプリで選べる場所）に書き出します。書き出したファイルは、そのサービスの規約とプライバシーポリシーの下で管理されます。開発者はこのファイルにアクセスできません。
 
 ### 生体認証
 「隠しモード」で Face ID / Touch ID / パスコードによる本人確認を使います。認証は iOS が行い、本アプリは生体情報を取得・保存しません。
@@ -33,7 +33,7 @@ title: プライバシーポリシー / Privacy Policy
 本アプリは、利用者の情報を第三者に提供しません。
 
 ### データの削除
-アプリを削除すると、iPhone の中のデータはすべて削除されます。バックアップ先に書き出したファイルは、利用者自身で削除してください。
+アプリを削除すると、iPhone の中のデータはすべて削除されます。書き出し先に書き出したファイルは、利用者自身で削除してください。
 
 ### お問い合わせ
 GitHub の Issues からご連絡ください: https://github.com/nemog9/hikidashi-support/issues
@@ -54,13 +54,13 @@ GitHub の Issues からご連絡ください: https://github.com/nemog9/hikidas
 ### Network access
 The App contacts only the sites that correspond to URLs you saved. These are not the developer's servers.
 - It downloads thumbnail images from the saved thumbnail URLs to display them.
-- When you save from the share sheet, it fetches the page's title, image and similar metadata from the shared URL. For YouTube and X (formerly Twitter), it uses their public oEmbed endpoints.
+- When you save from the share sheet, it fetches the page's title, image and similar metadata from the shared URL. For YouTube and X (formerly Twitter), it uses their public oEmbed endpoints and the APIs used for embedding posts.
 - "Open page" opens the saved URL in your default browser.
 
 Those sites may receive ordinary request information such as your IP address. Their handling is governed by their own privacy policies.
 
 ### Backup
-Only if you choose a backup folder, the App writes your saved items as a CSV file to that folder (any location available in the Files app). The file is then governed by that service's terms and privacy policy. The developer cannot access it.
+Only if you choose an export folder, the App writes your saved items as a CSV file to that folder (any location available in the Files app). The file is then governed by that service's terms and privacy policy. The developer cannot access it.
 
 ### Biometrics
 "Hidden mode" uses Face ID / Touch ID / passcode through iOS. The App does not obtain or store biometric data.
@@ -72,7 +72,7 @@ Only if you choose a backup folder, the App writes your saved items as a CSV fil
 The App does not provide your information to third parties.
 
 ### Deleting your data
-Deleting the App removes all data stored on your iPhone. Files you wrote to a backup folder must be deleted by you.
+Deleting the App removes all data stored on your iPhone. Files you wrote to an export folder must be deleted by you.
 
 ### Contact
 Please contact us via GitHub Issues: https://github.com/nemog9/hikidashi-support/issues
