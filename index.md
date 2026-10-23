@@ -16,6 +16,7 @@ PC で見ているページを QR コードにして、iPhone のカメラで読
 - タイトル・サムネイル・作者・本文を自動で取得（YouTube と X は専用の取り方）
 - 画像の候補から選べる。QR の上で、内容を編集できる
 - 外部には何も送らない（権限はクリックしたタブの読み取りだけ）
+- iPhone の Safari から保存する「ショートカット」もあります（共有ボタンから、タグなども読み取って保存）。
 - 入れ方と使い方: [hikidashi-clip（GitHub）](https://github.com/nemog9/hikidashi-clip) ／ [最新版のダウンロード](https://github.com/nemog9/hikidashi-clip/releases/latest)
 
 ## 使ってみる
