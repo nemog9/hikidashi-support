@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hikidashi（引き出し）｜集めたものを、すぐ見つけられる棚</title>
+<meta name="description" content="記事・動画・投稿・作品を、検索・ランダム・ハッシュタグで見返せる iPhone アプリ。データは端末の中に。CSV で出し入れできます。無料・広告なし・アカウント不要。">
+<meta name="theme-color" content="#fff6ec">
+<meta name="apple-itunes-app" content="app-id=6823911890">
+<link rel="icon" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="canonical" href="https://nemog9.github.io/hikidashi-support/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Hikidashi">
+<meta property="og:title" content="Hikidashi（引き出し）｜集めたものを、すぐ見つけられる棚">
+<meta property="og:description" content="検索・ランダム・ハッシュタグで見返せる iPhone アプリ。データは端末の中に。無料・広告なし・アカウント不要。">
+<meta property="og:url" content="https://nemog9.github.io/hikidashi-support/">
+<meta property="og:image" content="https://nemog9.github.io/hikidashi-support/assets/og.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hikidashi（引き出し）｜集めたものを、すぐ見つけられる棚">
+<meta name="twitter:description" content="検索・ランダム・ハッシュタグで見返せる iPhone アプリ。データは端末の中に。無料・広告なし・アカウント不要。">
+<meta name="twitter:image" content="https://nemog9.github.io/hikidashi-support/assets/og.png">
+<script>
+// 以前の案内（アプリ内のリンクなど）は、このトップの #safari などを指している。使い方ガイドへ移す。
+(function () {
+  var h = location.hash;
+  if (/^#(safari|share|chrome|csv)$/.test(h)) location.replace('guide/' + h);
+})();
+</script>
+<style>
+:root{
+  --bg:#fffaf4; --bg2:#fff1e2; --ink:#2a1c10; --sub:#6b4a30; --mute:#8a6a50;
+  --accent:#ed7305; --accent-ink:#fff; --card:#ffffff; --line:#f0dcc8;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#1a130d; --bg2:#241a11; --ink:#fbeede; --sub:#d9bfa6; --mute:#b39a82; --card:#2a1f15; --line:#3b2c1e; }
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+  color:var(--ink);background:var(--bg);line-height:1.75;-webkit-text-size-adjust:100%}
+a{color:var(--accent)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.top{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:var(--ink);text-decoration:none}
+.brand img{width:36px;height:36px;border-radius:22%;box-shadow:0 2px 8px rgba(120,60,0,.25)}
+nav a{color:var(--sub);text-decoration:none;font-weight:600;font-size:14px;margin-left:18px}
+.hero{background:radial-gradient(120% 90% at 85% 0%,var(--bg2) 0%,var(--bg) 60%);padding:28px 0 64px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
+.eyebrow{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:14px;padding:6px 16px;border-radius:999px}
+h1,h2,h3{text-wrap:balance}
+h1{font-size:clamp(30px,4.2vw,50px);line-height:1.22;font-weight:800;margin:18px 0 18px;letter-spacing:-.01em}
+.lead{font-size:18px;color:var(--sub);max-width:34em}
+.cta{display:flex;align-items:center;flex-wrap:wrap;gap:16px;margin:28px 0 16px}
+.cta img{height:48px;display:block}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0}
+.chips li{font-size:13px;font-weight:600;color:var(--sub);border:1px solid var(--line);background:var(--card);padding:4px 12px;border-radius:999px}
+.phone{background:#0f0f10;border-radius:44px;padding:8px;box-shadow:0 24px 60px rgba(120,60,0,.28),0 4px 14px rgba(0,0,0,.18);max-width:300px;margin:0 auto}
+.phone img{display:block;width:100%;height:auto;border-radius:36px}
+section{padding:64px 0}
+section h2{font-size:clamp(26px,3.6vw,36px);line-height:1.3;font-weight:800;margin-bottom:12px}
+.section-lead{color:var(--sub);max-width:36em;margin-bottom:36px}
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin:0 0 72px}
+.feature:nth-of-type(even) .phone{order:-1}
+.feature h3{font-size:clamp(22px,3vw,30px);line-height:1.35;font-weight:800;margin:10px 0 12px}
+.feature p{color:var(--sub);max-width:30em}
+.tag{font-size:13px;font-weight:700;color:var(--accent);letter-spacing:.04em}
+.alt{background:var(--bg2)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.card h3{font-size:18px;margin-bottom:6px}
+.card p{color:var(--sub);font-size:15px}
+.card a{font-weight:700}
+.local{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.final{text-align:center;padding:72px 0}
+.final .cta{justify-content:center}
+footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--mute);font-size:14px}
+footer .links{display:flex;flex-wrap:wrap;gap:18px;margin-bottom:10px}
+footer a{color:var(--sub);text-decoration:none;font-weight:600}
+@media (max-width:820px){
+  .hero .wrap,.feature{grid-template-columns:1fr;gap:28px}
+  .feature:nth-of-type(even) .phone{order:0}
+  .grid,.local{grid-template-columns:1fr}
+  nav a{margin-left:12px}
+  .hero{padding-bottom:40px}
+  section{padding:44px 0}
+  .feature{margin-bottom:52px}
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap" style="display:block">
+    <header class="top" style="padding-left:0;padding-right:0">
+      <a class="brand" href="./"><img src="assets/icon.png" alt="">Hikidashi</a>
+      <nav><a href="guide/">使い方ガイド</a><a href="privacy-policy">プライバシー</a></nav>
+    </header>
+  </div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">iPhone アプリ</span>
+      <h1>集めたものを、<br>すぐ見つけられる棚。</h1>
+      <p class="lead">記事、動画、投稿、作品。あとで見返したいものを、タイトル・URL・クリエイター・サムネイル・メモと一緒に集めて、検索やランダム表示で、いつでも取り出せます。</p>
+      <div class="cta">
+        <a href="https://apps.apple.com/jp/app/hikidashi-%E5%BC%95%E3%81%8D%E5%87%BA%E3%81%97/id6823911890"><img src="assets/badge.svg" alt="App Store からダウンロード"></a>
+      </div>
+      <ul class="chips"><li>無料</li><li>広告なし</li><li>アカウント不要</li><li>データは端末の中</li></ul>
+    </div>
+    <div class="phone"><img src="assets/01-library.jpg" alt="ライブラリの画面。保存した作品がサムネイル付きで並ぶ" width="660" height="1435"></div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>見つける、思い出す、隠す。</h2>
+    <p class="section-lead">保存したものが増えても、困らないための機能を、ひとつずつ丁寧に。</p>
+
+    <div class="feature">
+      <div>
+        <div class="tag">検索・絞り込み</div>
+        <h3>あの作品、どこだっけ？を、なくす。</h3>
+        <p>タイトル・メモ・クリエイターをまとめて検索。カテゴリや作者での絞り込み、お気に入り、並び順の切り替えもできます。</p>
+      </div>
+      <div class="phone"><img src="assets/05-filter.jpg" alt="カテゴリで絞り込んだライブラリ" loading="lazy" width="660" height="1435"></div>
+    </div>
+
+    <div class="feature">
+      <div>
+        <div class="tag">ランダム</div>
+        <h3>忘れていた作品に、また会える。</h3>
+        <p>上にスワイプするだけで、ライブラリの中から 1 件ずつ出会い直せます。カテゴリで絞って、気分に合うものだけを引くこともできます。</p>
+      </div>
+      <div class="phone"><img src="assets/02-random.jpg" alt="ランダム表示の画面" loading="lazy" width="660" height="1435"></div>
+    </div>
+
+    <div class="feature">
+      <div>
+        <div class="tag">メモとハッシュタグ</div>
+        <h3>メモの #タグ で、たどれる。</h3>
+        <p>メモに書いた <code>#ハッシュタグ</code> をタップすると、同じ言葉の作品が一覧に出ます。X の投稿を保存すると、本文のタグもそのまま使えます。</p>
+      </div>
+      <div class="phone"><img src="assets/03-detail.jpg" alt="詳細画面。メモの中のハッシュタグがタップできる" loading="lazy" width="660" height="1435"></div>
+    </div>
+
+    <div class="feature">
+      <div>
+        <div class="tag">隠しフィルター</div>
+        <h3>見せたくない作品は、ささっと隠す。</h3>
+        <p>ルールに当てはまる作品を、一覧やランダムから非表示に。見たいときだけ、Face ID で隠しモードに入れます。</p>
+      </div>
+      <div class="phone"><img src="assets/04-hide-rules.jpg" alt="隠すルールの設定画面" loading="lazy" width="660" height="1435"></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>いろいろな場所から、保存できる。</h2>
+    <p class="section-lead">見つけたその場で保存できるように、入り口をいくつか用意しています。</p>
+    <div class="grid">
+      <div class="card"><h3>Safari（ショートカット）</h3><p>共有ボタンから「Hikidashi に保存」。画面に表示された内容まで読み取って、追加の確認画面を開きます。</p><p><a href="guide/#safari">入れ方を見る →</a></p></div>
+      <div class="card"><h3>共有ボタン（アプリ）</h3><p>X・YouTube・pixiv・ブラウザなどの共有から「Save to Hikidashi」。タイトルと画像を自動で取得します。</p><p><a href="guide/#share">使い方を見る →</a></p></div>
+      <div class="card"><h3>PC の Chrome</h3><p>ページを QR コードにして、iPhone のカメラで読み取るだけ。サーバーもアカウントも要りません。</p><p><a href="guide/#chrome">拡張機能を見る →</a></p></div>
+      <div class="card"><h3>CSV で出し入れ</h3><p>書き出しも読み込みも CSV。ほかのアプリやサービスから、移ってくることもできます。</p><p><a href="guide/#csv">形式を見る →</a></p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>データは、あなたの手元に。</h2>
+    <p class="section-lead">サーバーもアカウントもありません。集めたものは、あなたの端末の中にあります。</p>
+    <div class="local">
+      <div class="card"><h3>端末の中だけ</h3><p>広告・解析・外部への送信はありません。ネットワークを使うのは、保存するページの情報や画像を取るときだけです。</p></div>
+      <div class="card"><h3>CSV でいつでも</h3><p>書き出した CSV は、そのまま表計算でも開けます。閉じ込められません。</p></div>
+      <div class="card"><h3>自動バックアップ</h3><p>好きなフォルダ（iCloud Drive など）に、自動で CSV を書き出せます。頻度も選べます。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt final">
+  <div class="wrap">
+    <h2>はじめてみる。</h2>
+    <p class="section-lead" style="margin:0 auto 24px">iPhone（iOS 17 以降）で、無料で使えます。</p>
+    <div class="cta">
+      <a href="https://apps.apple.com/jp/app/hikidashi-%E5%BC%95%E3%81%8D%E5%87%BA%E3%81%97/id6823911890"><img src="assets/badge.svg" alt="App Store からダウンロード"></a>
+    </div>
+    <p style="margin-top:14px"><a href="guide/">使い方ガイドを読む →</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="links">
+      <a href="guide/">使い方ガイド</a>
+      <a href="privacy-policy">プライバシーポリシー</a>
+      <a href="sample.csv">サンプル CSV</a>
+      <a href="https://github.com/nemog9/hikidashi-support/issues">お問い合わせ・不具合の報告</a>
+    </div>
+    <div>© 2026 Hikidashi. App Store は Apple Inc. のサービスマークです。</div>
+  </div>
+</footer>
+
+</body>
+</html>

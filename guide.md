@@ -1,8 +1,11 @@
 ---
-title: Hikidashi
+title: 使い方ガイド｜Hikidashi
+permalink: /guide/
 ---
 
-# Hikidashi（引き出し）
+[← Hikidashi トップ]({{ '/' | relative_url }})
+
+# Hikidashi（引き出し）の使い方
 
 集めたものを、すぐ見つけられる棚。
 
@@ -50,8 +53,8 @@ PC で見ているページを QR コードにして、iPhone のカメラで読
 設定の「CSV をインポート」で読み込み、「CSV をエクスポート」で書き出せます。ほかのアプリやサービスから移るときも、CSV を作れば取り込めます。
 
 - 列は `title, url, creators, thumbnail_url, category, note`（日本語の見出しも可）。クリエイターは「|」で区切って複数指定できます。
-- [サンプル CSV](sample.csv)（架空の 6 件）で、すぐ試せます。
+- [サンプル CSV]({{ '/sample.csv' | relative_url }})（架空の 6 件）で、すぐ試せます。
 
 ## サポート
-- [プライバシーポリシー / Privacy Policy](privacy-policy)
+- [プライバシーポリシー / Privacy Policy]({{ '/privacy-policy' | relative_url }})
 - お問い合わせ・不具合の報告: [GitHub Issues](https://github.com/nemog9/hikidashi-support/issues)
