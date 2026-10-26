@@ -1,5 +1,5 @@
 ---
-title: 使い方ガイド｜Hikidashi
+title: 使い方ガイド
 permalink: /guide/
 ---
 
