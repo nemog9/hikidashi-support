@@ -2,15 +2,15 @@
 title: プライバシーポリシー / Privacy Policy
 ---
 
-最終更新日: 2026-10-18 / Last updated: 2026-10-18
+最終更新日: 2026-11-03 / Last updated: 2026-11-03
 
 ## 日本語
 
 「Hikidashi」（以下、本アプリ）は、利用者の情報を開発者のサーバーへ送信・収集しません。アカウント登録も、広告も、解析ツールもありません。
 
 ### 本アプリが扱う情報
-- **保存した作品の情報**（タイトル、URL、クリエイター名、カテゴリ、メモ、サムネイル画像の URL、お気に入りなどの設定）は、利用者の iPhone の中だけに保存されます。
-- **検索履歴、外観や隠しフィルターの設定、隠すルール**も、iPhone の中だけに保存されます。
+- **保存した作品の情報**（タイトル、URL、クリエイター名、カテゴリ、メモ、サムネイル画像の URL、お気に入りなどの設定）は、利用者の端末（iPhone・iPad・Mac）の中だけに保存されます。
+- **検索履歴、外観や隠しフィルターの設定、隠すルール**も、端末の中だけに保存されます。
 
 ### 外部との通信
 本アプリは、次の場合にだけ、利用者が保存した URL などに対して通信します。通信先は利用者が指定したサイトであり、開発者のサーバーではありません。
@@ -23,6 +23,9 @@ title: プライバシーポリシー / Privacy Policy
 ### バックアップ
 利用者が「書き出し先」を設定した場合に限り、保存した作品のデータ（CSV ファイル）を、利用者が選んだフォルダ（「ファイル」アプリで選べる場所）に書き出します。書き出したファイルは、そのサービスの規約とプライバシーポリシーの下で管理されます。開発者はこのファイルにアクセスできません。
 
+### 端末間の同期
+利用者が「同期フォルダ」を設定した場合に限り、保存した作品のデータ（端末ごとの CSV ファイル）を、利用者が選んだフォルダ（iCloud Drive や Dropbox など、ほかの端末と共有しているフォルダ）に書き出し、同じフォルダにあるほかの端末のファイルを読み込みます。ファイルは、そのサービスの規約とプライバシーポリシーの下で管理されます。開発者はこのファイルにアクセスできません。
+
 ### 生体認証
 「隠しモード」で Face ID / Touch ID / パスコードによる本人確認を使います。認証は iOS が行い、本アプリは生体情報を取得・保存しません。
 
@@ -33,7 +36,7 @@ title: プライバシーポリシー / Privacy Policy
 本アプリは、利用者の情報を第三者に提供しません。
 
 ### データの削除
-アプリを削除すると、iPhone の中のデータはすべて削除されます。書き出し先に書き出したファイルは、利用者自身で削除してください。
+アプリを削除すると、端末の中のデータはすべて削除されます。書き出し先に書き出したファイルは、利用者自身で削除してください。
 
 ### お問い合わせ
 GitHub の Issues からご連絡ください: https://github.com/nemog9/hikidashi-support/issues
@@ -48,8 +51,8 @@ GitHub の Issues からご連絡ください: https://github.com/nemog9/hikidas
 "Hikidashi" (the App) does not send or collect your information to any server operated by the developer. There are no accounts, ads, or analytics.
 
 ### Information the App handles
-- **Saved items** (title, URL, creators, category, notes, thumbnail URL, favorite flags) are stored only on your iPhone.
-- **Search history, appearance and hide-filter settings, and hide rules** are also stored only on your iPhone.
+- **Saved items** (title, URL, creators, category, notes, thumbnail URL, favorite flags) are stored only on your device (iPhone, iPad or Mac).
+- **Search history, appearance and hide-filter settings, and hide rules** are also stored only on your device (iPhone, iPad or Mac).
 
 ### Network access
 The App contacts only the sites that correspond to URLs you saved. These are not the developer's servers.
@@ -62,6 +65,9 @@ Those sites may receive ordinary request information such as your IP address. Th
 ### Backup
 Only if you choose an export folder, the App writes your saved items as a CSV file to that folder (any location available in the Files app). The file is then governed by that service's terms and privacy policy. The developer cannot access it.
 
+### Sync between devices
+Only if you choose a "sync folder", the App writes a per-device CSV file of your saved items to the folder you selected (for example a folder shared across your devices via iCloud Drive or Dropbox) and reads the other devices' files in the same folder. Those files are handled under that service's terms and privacy policy. The developer cannot access them.
+
 ### Biometrics
 "Hidden mode" uses Face ID / Touch ID / passcode through iOS. The App does not obtain or store biometric data.
 
@@ -72,7 +78,7 @@ Only if you choose an export folder, the App writes your saved items as a CSV fi
 The App does not provide your information to third parties.
 
 ### Deleting your data
-Deleting the App removes all data stored on your iPhone. Files you wrote to an export folder must be deleted by you.
+Deleting the App removes all data stored on your device. Files you wrote to an export folder must be deleted by you.
 
 ### Contact
 Please contact us via GitHub Issues: https://github.com/nemog9/hikidashi-support/issues
